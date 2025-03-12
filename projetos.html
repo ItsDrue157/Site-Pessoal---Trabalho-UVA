@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="estilos/style-projetos.css">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+           <a class="cabecalho-menu-link" href="index.html">Home</a>
+           <a class="cabecalho-menu-link" href="sobremim.html">Sobre Mim</a>
+           <a class="cabecalho-menu-link" href="projetos.html">Projetos</a>
+        </nav>
+    </header>
+
+    <section class="conteudo">
+        <h1 class="conteudo__titulo">Aqui estão meus projetos desenvolvidos por mim</h1>
+
+        <div class="conteudo__cards">
+            <div class="card">
+                <h4 class="card__titulo">Calculadora Interativa com integração com banco de dados</h4>
+                <p class="card__descricao">Consiste em uma calculadora interativa feita em python, com conexao em um banco de dados para o armazenamento das operacoes feitas</p>
+                <a class="card_link_projeto" href="https://github.com/ItsDrue157/Calculadora-com-Historico">Clique aqui para ver</a>
+            </div>
+            <div class="card">
+                <h4 class="card__titulo">Sistema de Login</h4>
+                <p class="card__descricao">Sistema de login feito em python. Possui criacao de usuario, conexao com banco de dados usando o framework MariaDB</p>
+                <a class="card_link_projeto" href="https://github.com/ItsDrue157/Loginr">Clique aqui para ver</a>
+            </div>
+            <div class="card">
+                <h4 class="card__titulo">
+                    Script de movimentação de valores
+                </h4>
+                <p class="card__descricao">Criacao de um script feito em Java, para a demonstracao de um banco. Com operacoes de depositar, 
+                    transferir e sacar..</p>
+                <a class="card_link_projeto" href="https://github.com/ItsDrue157/Java-Desafio-Alura">Clique aqui para ver</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Carlos</p>
+    </footer>
 </body>
 </html>
