@@ -1,3 +1,7 @@
+body {
+    background-color: black;}
+
+
 .cabecalho{
     padding: 2% 0 0 15%;
 }
@@ -12,8 +16,38 @@
     font-size: 24px;
     color: #22D4FD;
 }
-.conteudo_titulo{
-    display: flex;
-    flex-direction: column;
+.conteudo {
+    padding: 3% 15%;
+    text-align: center;
+    margin-top: 50px; 
 }
 
+.conteudo__titulo{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: white;   
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30%;
+}
+
+.conteudo_paragrafo{
+    display: flex;
+    color: white;   
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15%;
+    margin-top: 5%;
+}
+.contato {
+    display: inline-block;
+    background-color: #22D4FD;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15%;
+    
+}
