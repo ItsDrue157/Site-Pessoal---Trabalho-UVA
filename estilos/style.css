@@ -10,6 +10,7 @@ body{
 }
 .cabecalho{
     padding: 2% 0 0 15%;
+    
 }
 .cabecalho-menu{
     display: flex;
