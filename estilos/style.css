@@ -280,3 +280,78 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
 }
+/*CSS Pagina Contato*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    padding-bottom: 60px; /* Espaço para o rodapé */
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 2% 0 0 5%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cabecalho-menu-link {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #22D4FD;
+}
+
+.conteudo_contato {
+    padding: 3% 5%;
+    text-align: center;
+    margin-top: 5vh; 
+}
+
+.conteudo__titulo_contato {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.conteudo_paragrafo_contato {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 0 10%;
+}
+
+.contato {
+    display: inline-block;
+    background-color: #22D4FD;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    margin-top: 5vh;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
