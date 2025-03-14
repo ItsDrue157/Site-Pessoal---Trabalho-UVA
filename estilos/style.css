@@ -34,7 +34,7 @@ body {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .apresentacao__conteudo {
@@ -93,6 +93,7 @@ body {
 }
 
 .rodape {
+
     padding: 1.5rem;
     color: #000000;
     background-color: #22D4FD;
