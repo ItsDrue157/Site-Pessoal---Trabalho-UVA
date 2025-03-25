@@ -15,6 +15,7 @@ body {
 
 .cabecalho-menu {
     display: flex;
+    margin-right: 5%;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
@@ -34,7 +35,7 @@ body {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-left: 25%;
+    margin-left: 5%;
 }
 
 .apresentacao__conteudo {
@@ -92,80 +93,51 @@ body {
     background-color: #272727;
 }
 
-.rodape {
 
-    padding: 1.5rem;
-    color: #000000;
-    background-color: #22D4FD;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    width: 100%;
-}
 
 /*CSS Pagina Sobre Mim  */
-
 .about-us {
-    margin-left: 18%;
+    padding: 3% 5%;
     text-align: center;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 2rem;
 }
 
-.card-sobres-container {
+.conteudo__cards {
     display: flex;
+    justify-content: center;
+    gap: 1.25rem;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
 }
 
-.card-sobre {
-    background-color: #292929;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.card {
+    background-color: #333;
+    border: 2px solid #22D4FD;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 18.75rem;
     text-align: center;
-    padding: 1rem;
-    box-sizing: border-box;
-    flex: 1 1 calc(33.333% - 1rem);
 }
 
-.card-sobre img {
+.card img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 0.5rem;
 }
 
-.card-sobre h2 {
-    margin: 0.5rem 0;
-    font-size: 1.5em;
+.card__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
 }
 
-.card-sobre p {
-    color: #ffffff;
-    font-size: 1em;
-    margin: 0.5rem 0;
+.card__descricao {
+    font-size: 1.125rem;
 }
 
-.card-sobre a {
-    display: inline-block;
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+.card_link_projeto {
     text-decoration: none;
+    color: #22D4FD;
+    font-size: 1.125rem;
 }
 
 .rodape {
