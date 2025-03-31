@@ -125,6 +125,11 @@ body {
     border-radius: 0.5rem;
 }
 
+.foto-perfil-sobre{
+    width: 4%;
+    height: 4%;
+}
+
 .card__titulo {
     font-size: 1.5rem;
     margin-bottom: 0.625rem;
