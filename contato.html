@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/estilos/style.css">
 </head>
 <body>
+    
     <header class="cabecalho">
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-link" href="index.html">Pagina Inicial</a>
@@ -50,5 +51,11 @@
             
     </section>
    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.cabecalho-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>

@@ -350,3 +350,40 @@ body {
 .container input[type="submit"]:hover {
     background: #0056b3;
 }
+
+@media (max-width: 769px) {
+    
+    /* pagina inicial */
+    .cabecalho{
+        margin: 0;
+        padding: 0;
+        margin-top: 10%;
+        width: 30%;
+        height: 100%;
+        background-color: #f1f1f1;
+        position: fixed;
+        overflow: auto;
+        background-color: #000000;
+    }
+    .apresentacao-index{
+        margin-left: 30%;
+    }
+    /* pagina sobre */
+    .about-us{
+        margin-left: 20%;
+
+    }
+
+
+    /* pagina projeto */
+    .conteudo{
+        margin-left: 25%;
+    }
+    /* pagina contato */
+    .conteudo_contato{
+        margin-left: 30%;
+    }
+
+
+
+}
