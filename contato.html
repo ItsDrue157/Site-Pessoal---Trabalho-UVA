@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="/estilos/style.css">
+    <script src="script.js" defer></script> <!-- Adicionado "defer" para garantir o carregamento -->
 </head>
 <body>
     
@@ -26,36 +27,32 @@
             Use o formulário abaixo para nos enviar um e-mail. Estamos ansiosos para te ouvir!</p>
 
             <div class="container">
-                <form action="action_page.php">
+                <form onsubmit="return enviarEmail()">
               
                   <label for="pname">Primeiro Nome</label>
-                  <input type="text" id="fname" name="primerionome" placeholder="Seu nome..">
+                  <input type="text" id="fname" name="primerionome" placeholder="Seu primerio nome..">
               
-                  <label for="uname">Ultimo Nome</label>
-                  <input type="text" id="lname" name="ultimonome" placeholder="Seu ultimo nome..">
+                  <label for="uname">Último Nome</label>
+                  <input type="text" id="lname" name="ultimonome" placeholder="Seu último nome..">
               
-                  <label for="Assunto">Assunto</label>
+                  <label for="Assunto">Assuntos</label>
                   <select id="Assunto" name="Assunto">
-                    <option value="Orcamento">Orcamento</option>
-                    <option value="Duvidas">Duvidas</option>
+                    <option value="Orcamento">Orçamento</option>
+                    <option value="Duvidas">Dúvidas</option>
                     <option value="Outros">Outros</option>
                   </select>
               
                   <label for="Mensagem">Mensagem</label>
-                  <textarea id="subject" name="subject" placeholder="escreva algo aqui" style="height:200px"></textarea>
+                  <textarea id="subject" name="subject" placeholder="escreva algo aqui"></textarea>
               
-                  <input type="submit" value="Submit">
+                  <button type="submit" id="enviarEmail" class="btn-enviar">Enviar Mensagem</button>
               
                 </form>
               </div>
             
     </section>
    
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.cabecalho-menu');
-            menu.classList.toggle('show');
-        }
-    </script>
+    
 </body>
+
 </html>
