@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // NAVBAR Clicked
     const currentPage = window.location.pathname;
     const pages = document.getElementsByClassName('cabecalho-menu-link');
     for (const item of pages) {
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.assign('index.html');
         }
     }
-
+    // Formulário
     const submitButton = document.querySelector('.submitButton')
     console.log(submitButton)
     submitButton.addEventListener('click', () => {
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    // função para contar os caracteres do textarea
     const textArea = document.getElementById("Mensagem");
     textArea.addEventListener("input", (e) => {
         const CharCount = document.getElementById("charCount");
