@@ -29,33 +29,34 @@
                 <form action="action_page.php">
               
                   <label for="pname">Primeiro Nome</label>
-                  <input type="text" id="fname" name="primerionome" placeholder="Seu nome..">
+                  <input type="text" id="pname" name="primerionome" placeholder="Seu nome..">
               
                   <label for="uname">Ultimo Nome</label>
-                  <input type="text" id="lname" name="ultimonome" placeholder="Seu ultimo nome..">
+                  <input type="text" id="uname" name="ultimonome" placeholder="Seu ultimo nome..">
               
                   <label for="Assunto">Assunto</label>
                   <select id="Assunto" name="Assunto">
-                    <option value="Orcamento">Orcamento</option>
-                    <option value="Duvidas">Duvidas</option>
+                      <option value="none">Selecione...</option>
+                    <option value="Orcamento">Orçamento</option>
+                    <option value="Duvidas">Dúvidas</option>
                     <option value="Outros">Outros</option>
                   </select>
               
                   <label for="Mensagem">Mensagem</label>
-                  <textarea id="subject" name="subject" placeholder="escreva algo aqui" style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
+                  <textarea id="Mensagem" maxlength="500" name="subject" placeholder="Escreva algo aqui" style="height:200px; resize: none"></textarea>
+                    <p id="charCount">0/500</p>
+
+                  <a class="submitButton" href="#">Enviar</a>
               
                 </form>
               </div>
-            
     </section>
-   
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.cabecalho-menu');
-            menu.classList.toggle('show');
-        }
-    </script>
+    <script src="app.js"></script>
+<!--    <script>-->
+<!--        function toggleMenu() {-->
+<!--            const menu = document.querySelector('.cabecalho-menu');-->
+<!--            menu.classList.toggle('show');-->
+<!--        }-->
+<!--    </script>-->
 </body>
 </html>
