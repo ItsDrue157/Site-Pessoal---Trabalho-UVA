@@ -97,6 +97,8 @@ body {
 
 
 /*CSS Pagina Sobre Mim  */
+
+
 .about-us {
     padding: 3% 5%;
     text-align: center;
@@ -250,6 +252,13 @@ body {
     font-weight: 400;
 }
 /*CSS Pagina Contato*/
+#pagina-contato{
+    margin: 0 auto;
+    max-width: 800px
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 body {
@@ -262,7 +271,7 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0 0 5%;
+    padding: 2% 0 3rem 5%;
 }
 
 .cabecalho-menu {
@@ -312,18 +321,7 @@ body {
     margin-top: 5vh;
 }
 
-.rodape {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1.5rem;
-    color: #000000;
-    background-color: #22D4FD;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
+
 
 .container {
     display: flex;
@@ -331,7 +329,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 30rem;
+    width: 90%;
+    max-width: 30rem;
     margin: auto;
     padding: 20px;
     background: #f9f9f9;
@@ -388,39 +387,24 @@ body {
     color: black;
 }
 
-@media (max-width: 769px) {
-    
-    /* pagina inicial */
-    .cabecalho{
-        margin: 0;
-        padding: 0;
-        margin-top: 10%;
-        width: 30%;
-        height: 100%;
-        background-color: #f1f1f1;
+@media (max-width: 1000px) {
+    /* Menu lateral fixo */
+    .cabecalho {
         position: fixed;
-        overflow: auto;
+        top: 0;
+        left: 0;
+        width: 30%; /* Largura do menu lateral */
+        height: 100%;
         background-color: #000000;
-    }
-    .apresentacao-index{
-        margin-left: 30%;
-    }
-    /* pagina sobre */
-    .about-us{
-        margin-left: 28%;
-
+        overflow-y: auto;
+        z-index: 1000; /* Garante que o menu fique acima */
     }
 
-
-    /* pagina projeto */
-    .conteudo{
-        margin-left: 25%;
+    /* Adiciona espaço ao conteúdo principal */
+    .conteudo_contato,
+    .apresentacao-index,
+    .about-us,
+    .conteudo {
+        margin-left: 30%; /* Espaço igual à largura do menu lateral */
     }
-    /* pagina contato */
-    .conteudo_contato{
-        margin-left: 30%;
-    }
-
-
-
 }
