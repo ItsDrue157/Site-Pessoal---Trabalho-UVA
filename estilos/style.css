@@ -386,6 +386,43 @@ body {
     justify-content: flex-end;
     color: black;
 }
+/*CSS Pagina Novidades*/
+
+.conteudo-novidades{
+    padding: 3% 5%;
+    text-align: center;
+}
+.conteudo-novidades-titulo{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.imagem-novidades{
+    width: 100%;
+    max-width: 19rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+.novidades-paragrafo{
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.novidades-fonte-noticia{
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.novidades-link-noticia{
+    text-decoration: none;
+    color: #22D4FD;
+    font-size: 1.125rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 @media (max-width: 1000px) {
     /* Menu lateral fixo */
@@ -404,7 +441,8 @@ body {
     .conteudo_contato,
     .apresentacao-index,
     .about-us,
-    .conteudo {
+    .conteudo,
+    .conteudo-novidades {
         margin-left: 30%; /* Espaço igual à largura do menu lateral */
     }
 }
