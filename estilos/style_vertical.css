@@ -1,24 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
 body {
-    box-sizing: border-box;
+    margin-left: 30%; /* Espaço igual à largura do menu */
     background-color: #000000;
     color: #F6F6F6;
-    margin: 0;
-    padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
+
 .cabecalho {
-    padding: 2% 0 0 5%;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 20%; /* Largura do menu */
+    height: 100%; /* Ocupa toda a altura da página */
+    background-color: #000000; /* Cor de fundo do menu */
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Garante que o menu fique acima do conteúdo */
 }
 
 .cabecalho-menu {
     display: flex;
-    margin-right: 5%;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    flex-direction: column; /* Alinha os links verticalmente */
+    gap: 1rem;
 }
 
 .cabecalho-menu-link {
@@ -26,10 +30,19 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     color: #22D4FD;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.cabecalho-menu-link:hover {
+    
+    color: #00ffff;
 }
 
 .apresentacao-index {
     padding: 3% 5%;
+    margin-right: 30%; /* Espaço igual à largura do menu */
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -95,12 +108,16 @@ body {
 
 
 
-/*CSS Pagina Sobre nos  */
 
+/* pagina sobre  */
 
 .about-us {
     padding: 3% 5%;
     text-align: center;
+    margin-right: 30%;
+    margin-top: 10%;
+    
+    
 }
 
 .conteudo__cards {
@@ -108,6 +125,7 @@ body {
     justify-content: center;
     gap: 1.25rem;
     flex-wrap: wrap;
+    
 }
 
 .card {
@@ -147,14 +165,10 @@ body {
     font-size: 1.125rem;
 }
 
-.rodape {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    width: 100%;
-}
-/*CSS Pagina Projetos*/
+
+
+/* CSS do projetos */ 
+
 .cabecalho {
     padding: 2% 0 0 5%;
 }
@@ -199,6 +213,7 @@ body {
 .conteudo {
     padding: 3% 5%;
     text-align: center;
+    margin-right: 14%;
 }
 
 .conteudo__titulo {
@@ -238,48 +253,14 @@ body {
     font-size: 1.125rem;
 }
 
-/*CSS Pagina Contato*/
-#pagina-contato{
-    margin: 0 auto;
-    max-width: 800px;
-}
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
-body {
-    background-color: black;
-    margin: 0;
- 
-    color: #F6F6F6;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-}
-
-.cabecalho {
-    padding: 2% 0 3rem 5%;
-}
-
-.cabecalho-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.cabecalho-menu-link {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #22D4FD;
-}
+/* CSS do contato */ 
 
 .conteudo_contato {
     padding: 3% 5%;
     text-align: center;
     margin-top: 5vh; 
+    margin-right: 20%;
 }
 
 .conteudo__titulo_contato {
@@ -373,9 +354,12 @@ body {
     justify-content: flex-end;
     color: black;
 }
+
 .conteudo-novidades{
     padding: 3% 5%;
     text-align: center;
+    margin-top: 5%;
+    margin-right: 16%;
 }
 .conteudo-novidades-titulo{
     font-size: 1.5rem;
@@ -406,29 +390,4 @@ body {
     color: #22D4FD;
     font-size: 1.125rem;
     font-family: 'Montserrat', sans-serif;
-}
-
-
-
-@media (max-width: 1000px) {
-    /* menu lateral fixo */
-    .cabecalho {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 30%; /* largura do menu lateral */
-        height: 100%;
-        background-color: #000000;
-        overflow-y: auto;
-        z-index: 1000; /* garante que o menu fique acima */
-    }
-
-    /* Adiciona espaço ao conteúdo principal */
-    .conteudo_contato,
-    .apresentacao-index,
-    .about-us,
-    .conteudo,
-    .conteudo-novidades {
-        margin-left: 30%; /* Espaço igual a largura do menu lateral */
-    }
 }

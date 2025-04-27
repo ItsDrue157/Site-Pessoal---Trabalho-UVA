@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(submitButton)
     submitButton.addEventListener('click', () => {
         const FirstName = document.getElementById("pname").value;
+        const escolha_dev = document.getElementById("escolha_dev").value;
         const LastName = document.getElementById("uname").value;
         const Select = document.getElementById("Assunto").value;
         const Message = document.getElementById("Mensagem").value;

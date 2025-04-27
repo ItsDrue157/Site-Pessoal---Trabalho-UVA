@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/style_vertical.css">
     <script src="script.js" defer></script> <!-- Adicionado "defer" para garantir o carregamento -->
 </head>
 <body id="pagina-contato">
@@ -42,7 +42,15 @@
                     <option value="Duvidas">Dúvidas</option>
                     <option value="Outros">Outros</option>
                   </select>
-              
+                  <label for="escolha_dev">Selecione o destinatario</label>
+                  <select id="escolha_dev" name="escolha_dev">
+                      <option value="none">Selecione...</option>
+                    <option value="gabrielRamos">Gabriel Ramos</option>
+                    <option value="gabrielFelix">Gabriel Felix</option>
+                    <option value="carlos">Carlos Mateus</option>
+                    <option value="miguelLuis">Miguel Luis</option>
+                    <option value="joaoItalo">João Italo</option>
+                  </select>
                   <label for="Mensagem">Mensagem</label>
                   <textarea id="Mensagem" maxlength="500" name="subject" placeholder="Escreva algo aqui" style="height:200px; resize: none"></textarea>
                     <p id="charCount">0/500</p>
