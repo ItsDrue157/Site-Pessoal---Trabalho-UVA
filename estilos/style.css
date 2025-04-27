@@ -26,6 +26,7 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     color: #22D4FD;
+    text-align: center;
 }
 
 .apresentacao-index {
@@ -430,5 +431,6 @@ body {
     .conteudo,
     .conteudo-novidades {
         margin-left: 30%; /* Espaço igual a largura do menu lateral */
+        
     }
 }
