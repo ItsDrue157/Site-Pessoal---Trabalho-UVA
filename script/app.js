@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gabrielRamos: "gabriel.r.silva2806@gmail.com",
             gabrielFelix: "gabriel.barros@veigadealmeida.edu.br",
             carlos: "17573508700@veigadealmeida.edu.br",
-            miguelLuis: "miguel.luis@example.com",
+            miguelLuis: "glluid12@gmail.com",
             joaoItalo: "joao.italo@example.com"
         };
     
